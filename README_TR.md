@@ -4,7 +4,7 @@
 
 # Arch Linux + Hyprland (Lua) Rice
 
-Lua tabanlı Hyprland, şeffaf Conky sistem izleyicisi, Waybar ve Rofi ile güçlendirilmiş hafif ve hızlı Arch Linux masaüstü ortamı.
+Lua tabanlı Hyprland, şeffaf Conky sistem izleyicisi, Waybar ve Rofi ile güçlendirilmiş hafif ve hızlı Arch Linux masaüstü ortamı. Bunu yaparken ağır bir şekilde yapay zeka kullandım. Buradaki bilgi kısmını da yapay zekaya yazdırdım. Bu rice'ı diğer cihazlarımda da kullanabilmek amacıyla buraya yükledim. İstediğiniz gibi kullanabilirsiniz. Eğer herhangi bir sorunla karşılaşırsanız bana raporlayabilirsiniz. Düzeltebilirim.
 
 ---
 
