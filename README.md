@@ -1,22 +1,60 @@
-Kendi Arch linux kurulumumda hiç yazılım bilgim olmadan yaptığım rice (Yapay zekadan bayağı yardım aldım, içindeki koddan ben bile emin değilim.)
+<p align="right">
+  <b>English</b> | <a href="README_TR.md">Türkçe</a>
+</p>
 
-## 🚀 Hızlı Kurulum (Quick Install)
+# Arch Linux + Hyprland (Lua) Rice
 
-Sıfır bir Arch Linux sisteminde terminali açıp şu komutları çalıştırmanız yeterlidir:
+A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi.
 
-bash
+---
+
+## 🚀 Quick Install
+
+On a fresh Arch Linux installation, open your terminal and run:
+cat << 'EOF' > ~/dotfiles/README.md
+<p align="right">
+  <b>English</b> | <a href="README_TR.md">Türkçe</a>
+</p>
+
+# Arch Linux + Hyprland (Lua) Rice
+
+A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi.
+
+---
+
+## 🚀 Quick Install
+
+On a fresh Arch Linux installation, open your terminal and run:bash
 git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
-cd ~/dotfiles && ./install.sh
+cd ~/dotfiles && ./install.sh---
 
-## Dahili Araçlar & Özellikler
-- **Pencere Yöneticisi:** Hyprland (Lua konfigürasyonu)
-- **Sistem Paneli:** Waybar
-- **Uygulama Menüsü:** Rofi (`Super + R`)
-- **İzleyici:** Conky (Masaüstü sağ alt, şeffaf arka plan)
-- **Tam Ekran:** `Super + F`
-- **Serbest Mod (Float):** `Super + V`
-- **Çalışma Alanı Taşıma:** `Super + Shift + [1-9]`
-- **Ofis:** LibreOffice (MS Fonts uyumluluğu ile)
-- **Oyun:** Steam, Prism Launcher
+## 🛠️ Features & Components
 
+* **Window Manager:** Hyprland (`hyprland.lua` configuration)
+* **Status Bar:** Waybar
+* **Application Launcher:** Rofi (`Super + R`)
+* **System Monitor:** Conky (Bottom-right, fully transparent background)
+* **Productivity:** LibreOffice (bundled with Microsoft Core Fonts)
+* **Gaming:** Steam & Prism Launcher (Minecraft)
 
+---
+
+## ⌨️ Keybindings
+
+| Shortcut | Action |
+| :--- | :--- |
+| `Super + Q` | Launch Terminal |
+| `Super + C` | Close Active Window |
+| `Super + R` | Application Launcher (Rofi) |
+| `Super + V` | Toggle Floating Mode |
+| `Super + F` | Toggle Fullscreen |
+| `Super + [1-9]` | Switch Workspace |
+| `Super + Shift + [1-9]` | Move Window to Workspace |
+
+---
+
+## 📦 What `install.sh` Does
+
+1. Installs base graphical packages, fonts (DejaVu, Noto, MS Fonts via AUR), and utilities.
+2. Installs `yay` (AUR helper) automatically if not detected.
+3. Links `hypr`, `conky`, `waybar`, and `rofi` configuration directories into `~/.config/` using symlinks.
