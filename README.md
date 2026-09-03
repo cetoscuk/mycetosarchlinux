@@ -4,7 +4,7 @@
 
 # Arch Linux + Hyprland (Lua) Rice
 
-A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi.
+A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi. I have used AI heavyly while creating this. Even this information was made by AI. I'm updloading this so that I may use this rice on different devices of mine. Feel free to use it as well. If you have any problems with it, just report it to me. I might fix it.
 
 ---
 
