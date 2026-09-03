@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="screenshot_2026-09-04_01-09-49" src="https://github.com/user-attachments/assets/5c917fcc-5082-4900-a0c4-415ce699d137" />
 <p align="right">
   <b>English</b> | <a href="README_TR.md">Türkçe</a>
 </p>
