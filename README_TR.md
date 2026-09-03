@@ -13,7 +13,7 @@ Lua tabanlı Hyprland, şeffaf Conky sistem izleyicisi, Waybar ve Rofi ile güç
 Sıfır bir Arch Linux sisteminde terminali açıp şu komutları çalıştırmanız yeterlidir:
 
 ```bash
-git clone [https://github.com/cetoscuk/mycetosarchlinux.git](https://github.com/cetoscuk/mycetosarchlinux.git) ~/dotfiles
+git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
 cd ~/dotfiles && ./install.sh
 ```
 
