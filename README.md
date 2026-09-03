@@ -1,5 +1,13 @@
 Kendi Arch linux kurulumumda hiç yazılım bilgim olmadan yaptığım rice (Yapay zekadan bayağı yardım aldım, içindeki koddan ben bile emin değilim.)
 
+## 🚀 Hızlı Kurulum (Quick Install)
+
+Sıfır bir Arch Linux sisteminde terminali açıp şu komutları çalıştırmanız yeterlidir:
+
+bash
+git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
+cd ~/dotfiles && ./install.sh
+
 ## Dahili Araçlar & Özellikler
 - **Pencere Yöneticisi:** Hyprland (Lua konfigürasyonu)
 - **Sistem Paneli:** Waybar
