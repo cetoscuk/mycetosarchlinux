@@ -11,10 +11,9 @@ A lightweight, performant, and aesthetic Arch Linux desktop environment powered 
 ## 🚀 Quick Install
 
 On a fresh Arch Linux installation, open your terminal and run:
-cat << 'EOF' > ~/dotfiles/README.md
-<p align="right">
-  <b>English</b> | <a href="README_TR.md">Türkçe</a>
-</p>
+bash
+git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
+cd ~/dotfiles && ./install.sh---
 
 # Arch Linux + Hyprland (Lua) Rice
 
