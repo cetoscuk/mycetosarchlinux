@@ -1,4 +1,3 @@
-![Uploading screenshot_2026-09-04_01-09-49.png…]()
 <p align="right">
   <b>English</b> | <a href="README_TR.md">Türkçe</a>
 </p>
