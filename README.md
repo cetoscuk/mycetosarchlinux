@@ -15,6 +15,7 @@ On a fresh Arch Linux installation, open your terminal and run:
 ```bash
 git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
 cd ~/dotfiles && ./install.sh
+```
 
 ---
 
