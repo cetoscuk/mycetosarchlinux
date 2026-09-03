@@ -52,6 +52,7 @@ local menu        = "pkill -x rofi || rofi -show drun"
 
 hl.on("hyprland.start", function ()
    hl.exec_cmd("waybar")
+   hl.exec_cmd("conky -c ~/.config/conky/conky.conf")
    hl.exec_cmd("dunst")
    hl.exec_cmd("sh -c '~/.config/hypr/scripts/weather.sh'")
    hl.exec_cmd("sh -c 'hyprpaper & sleep 0.5 && hyprctl hyprpaper wallpaper \"eDP-1,/home/cetos/Pictures/wallpapers/makima.png\"'")
