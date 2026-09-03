@@ -1,0 +1,192 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Monocraft", "Monocraft Nerd Font", monospace;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(9, 35, 40, 0.92);
+    border: 2px solid #12544F;
+    border-radius: 10px;
+    color: #8BBB92;
+    font-family: "Monocraft", monospace;
+}
+
+/* --- ÇALIŞMA ALANLARI (WORKSPACES) --- */
+
+#workspaces {
+    margin: 4px 0px;
+    padding: 0px;
+}
+
+#workspaces button {
+    padding: 6px 0px;
+    margin: 4px 8px;
+    min-height: 46px;
+    min-width: 58px;
+    border-radius: 8px;
+    background-color: #12544F;
+    background-image: none;
+    border: 2px solid #2A835F;
+    color: #8BBB92;
+    font-family: "Monocraft", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button label {
+    color: inherit;
+    font-family: "Monocraft", monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#workspaces button image {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+#workspaces button:hover {
+    background-color: #2A835F;
+    background-image: none;
+    border-color: #8BBB92;
+    color: #8BBB92;
+    box-shadow: none;
+}
+
+#workspaces button:hover label {
+    color: #8BBB92;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background-color: #8BBB92;
+    background-image: none;
+    border-color: #8BBB92;
+    color: #092328;
+}
+
+#workspaces button.active label,
+#workspaces button.focused label {
+    color: #092328;
+}
+
+#workspaces button.urgent {
+    background-color: #842A2A;
+    background-image: none;
+    border-color: #BA4E4E;
+    color: #FFFFFF;
+}
+
+/* --- TÜM MODÜLLER (ORTALAMA VE KUTU BOYUTU) --- */
+
+#memory,
+#cpu,
+#pulseaudio,
+#bluetooth,
+#battery,
+#clock,
+#custom-power,
+#custom-wifi {
+    background-color: #12544F;
+    color: #8BBB92;
+    border: 1px solid #2A835F;
+    border-radius: 6px;
+    min-width: 58px;
+    margin: 4px 8px;
+    padding: 38px 2px 6px 2px;
+    font-family: "Monocraft", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 28px 28px;
+}
+
+/* TNT (RAM) */
+#memory {
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_tnt.png");
+}
+
+/* Redstone (CPU) */
+#cpu {
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_redstone.png");
+}
+
+/* Note Block (Ses) */
+#pulseaudio {
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_note_block.png");
+}
+
+/* Lapis Lazuli (Bluetooth) */
+#bluetooth {
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_lapis_lazuli.png");
+}
+
+/* Emerald (Pil / Battery) */
+#battery {
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_emerald.png");
+}
+
+/* Saat */
+#clock {
+    padding: 8px 2px;
+    font-size: 15px;
+    background-image: none;
+    min-height: 0px;
+}
+
+/* Beacon (WiFi) */
+#custom-wifi {
+    padding: 0px;
+    min-height: 48px;
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_beacon.png");
+    background-position: center center;
+    background-size: 32px 32px;
+}
+
+#custom-wifi:hover {
+    background-color: #2A835F;
+    border-color: #8BBB92;
+}
+
+/* Totem (Power) */
+#custom-power {
+    padding: 0px;
+    min-height: 48px;
+    background-image: url("/home/cetos/.config/waybar/icons/minecraft_totem_of_undying.png");
+    background-position: center center;
+    background-size: 34px 34px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#custom-power:hover {
+    background-color: #2A835F;
+    border-color: #8BBB92;
+}
+
+/* TOOLTIP */
+tooltip {
+    background-color: #092328;
+    border: 2px solid #2A835F;
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+
+tooltip * {
+    font-family: "Monocraft", monospace;
+    font-size: 14px;
+    color: #8BBB92;
+}
+
+tooltip label {
+    font-family: "Monocraft", monospace;
+    font-size: 14px;
+    color: #8BBB92;
+}

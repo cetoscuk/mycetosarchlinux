@@ -1,0 +1,74 @@
+* {
+    background-color: rgba(0, 0, 0, 0);
+    text-color: #8BBB92;
+    font: "Monocraft 24";
+    margin: 0px;
+    padding: 0px;
+}
+
+configuration {
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+window {
+    width: 1044px;
+    height: 498px;
+    background-image: url("/home/cetos/.config/waybar/icons/enchtable.png", both);
+    border: 0px;
+}
+
+mainbox {
+    children: [ listview ];
+    background-color: transparent;
+}
+
+listview {
+    /* 3 kat büyütülmüş yuva koordinatları */
+    margin: 84px 66px 48px 351px;
+    lines: 3;
+    spacing: 6px;
+    scrollbar: false;
+    cycle: true;
+    background-color: transparent;
+}
+
+element {
+    /* Büyüyen yuvaların içine tam oturması için padding */
+    padding: 18px 24px;
+    background-color: transparent;
+    text-color: #8BBB92;
+    orientation: horizontal;
+    children: [ element-icon, element-text ];
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #8BBB92;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: #8BBB92;
+}
+
+element selected.normal {
+    /* Büyü masası seçimi: Yeşil şeffaf parıltı */
+    background-color: rgba(42, 131, 95, 0.55);
+    text-color: #ffffff;
+}
+
+element-icon {
+    size: 60px;
+    margin: 0px 24px 0px 0px;
+    background-color: transparent;
+    vertical-align: 0.5;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

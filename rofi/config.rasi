@@ -1,0 +1,108 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+    drun-display-format: "{name}";
+    font: "Monocraft 12";
+}
+
+* {
+    bg-col:          #0b120ee6;
+    bg-input:        #142018;
+    border-col:      #2d4a34;
+    selected-bg:     #1e3825;
+    accent-green:    #55ff55;
+    fg-main:         #d0e0d2;
+    fg-dim:          #6b8a70;
+
+    background-color: transparent;
+    text-color:       @fg-main;
+    margin:           0;
+    padding:          0;
+}
+
+window {
+    width: 680px;
+    height: 480px;
+    border: 2px solid;
+    border-color: @border-col;
+    background-color: @bg-col;
+    border-radius: 8px;
+}
+
+mainbox {
+    padding: 18px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @bg-input;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0px 0px 14px 0px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent-green;
+    padding: 0px 10px 0px 0px;
+}
+
+entry {
+    text-color: @fg-main;
+    placeholder: "Uygulama ara...";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    columns: 1;
+    lines: 7;
+    spacing: 4px;
+    cycle: true;
+    dynamic: true;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 6px;
+    spacing: 12px;
+}
+
+element-icon {
+    size: 26px;
+    cursor: pointer;
+}
+
+element-text {
+    vertical-align: 0.5;
+    cursor: pointer;
+    text-color: inherit;
+}
+
+/* Beyaz arka planları tamamen kaldıran satır kuralları */
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-main;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg-main;
+}
+
+element selected.normal {
+    background-color: @selected-bg;
+    text-color: @accent-green;
+    border: 1px solid;
+    border-color: @accent-green;
+}
+
+element normal.active, element alternate.active {
+    background-color: transparent;
+    text-color: @accent-green;
+}
+
+element selected.active {
+    background-color: @selected-bg;
+    text-color: @accent-green;
+}

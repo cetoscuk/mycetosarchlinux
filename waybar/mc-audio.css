@@ -1,0 +1,59 @@
+* {
+    font-family: "Monocraft", monospace;
+    font-size: 11px;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: #092328;
+    border: 2px solid #2A835F;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+label {
+    color: #8BBB92;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Kaydırılabilir Ses Çubuğu */
+scale trough {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 2px;
+    min-height: 8px;
+}
+
+scale highlight {
+    background-color: #8BBB92;
+    border-radius: 2px;
+}
+
+scale slider {
+    background-color: #2A835F;
+    border: 1px solid #8BBB92;
+    border-radius: 2px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+/* Butonlar */
+button {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 4px;
+    color: #8BBB92;
+    padding: 4px 6px;
+}
+
+button:hover {
+    background-color: #2A835F;
+    color: #092328;
+    border-color: #8BBB92;
+}

@@ -1,0 +1,52 @@
+* {
+    font: "Monocraft 11";
+    background-color: transparent;
+    text-color: #8BBB92;
+    margin: 0px;
+    padding: 0px;
+}
+
+window {
+    width: 320px;
+    border: 2px;
+    border-color: #2A835F;
+    border-radius: 6px;
+    background-color: #092328;
+    location: west;
+    x-offset: 74px;
+    y-offset: 0px;
+    padding: 12px;
+}
+
+mainbox {
+    children: [ prompt, listview ];
+    spacing: 10px;
+}
+
+prompt {
+    text-color: #8BBB92;
+    font: "Monocraft 12";
+    padding: 0px 0px 6px 0px;
+}
+
+listview {
+    lines: 7;
+    spacing: 4px;
+    scrollbar: false;
+    cycle: true;
+}
+
+element {
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-color: #8BBB92;
+}
+
+element selected.normal {
+    background-color: #2A835F;
+    text-color: #092328;
+}
+
+element-text {
+    text-color: inherit;
+}
