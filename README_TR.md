@@ -10,9 +10,10 @@ Lua tabanlı Hyprland, şeffaf Conky sistem izleyicisi, Waybar ve Rofi ile güç
 
 ## 🚀 Hızlı Kurulum
 
-Sıfır bir Arch Linux sisteminde terminali açıp şu komutları çalıştırmanız yeterlidir:bash
+Sıfır bir Arch Linux sisteminde terminali açıp şu komutları çalıştırmanız yeterlidir:
+bash
 git clone https://github.com/cetoscuk/mycetosarchlinux.git ~/dotfiles
-cd ~/dotfiles && ./install.sh---
+cd ~/dotfiles && ./install.sh
 
 ## 🛠️ Özellikler ve Araçlar
 
