@@ -4,7 +4,7 @@
 
 # Arch Linux + Hyprland (Lua) Rice
 
-A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi. I heavily utilized artificial intelligence while building this setup and generating this documentation. YOU MUST BE CAREFUL IF YOU WANT TO CHANGE THE CONFIG FILES AS I USED TURKISH IN THE EXPLANATION PART OF THE CODE. I uploaded this rice here primarily to replicate my setup across my other devices. Feel free to use and modify it as you like. If you encounter any issues, feel free to report them and I'll look into fixing them.
+A lightweight, performant, and aesthetic Arch Linux desktop environment powered by Lua-configured Hyprland, a transparent Conky system monitor, Waybar, and Rofi. You can see that the calendar is in English but ram info is in Turkish. That's because I am bilingual and just prefer one language over another sometimes. So, some GUI elements might be in Turkish. I heavily utilized artificial intelligence while building this setup and generating this documentation. I uploaded this rice here primarily to replicate my setup across my other devices. Feel free to use and modify it as you like. If you encounter any issues, feel free to report them and I'll look into fixing them.
 
 ---
 
