@@ -1,0 +1,87 @@
+* {
+    font-family: "Monocraft", monospace;
+    font-size: 11px;
+}
+
+window {
+    background-color: #092328;
+    border: 2px solid #2A835F;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+/* Üst Başlık */
+.title {
+    color: #8BBB92;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.device-name {
+    color: #8BBB92;
+    font-size: 10px;
+    margin-bottom: 6px;
+    opacity: 0.8;
+}
+
+/* Çizgiler */
+separator {
+    background-color: #2A835F;
+    min-height: 1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* Ses Barı */
+scale trough {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 3px;
+    min-height: 8px;
+}
+
+scale highlight {
+    background-color: #8BBB92;
+    border-radius: 3px;
+}
+
+scale slider {
+    background-color: #2A835F;
+    border: 1px solid #8BBB92;
+    border-radius: 2px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+/* Eylem Butonları */
+button {
+    background-image: none;
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 4px;
+    color: #8BBB92;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 6px 8px;
+}
+
+button:hover {
+    background-color: #2A835F;
+    color: #092328;
+    border-color: #8BBB92;
+}
+
+/* Kapat Butonu */
+.btn-close {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #2A835F;
+    color: #8BBB92;
+    padding: 2px 6px;
+}
+
+.btn-close:hover {
+    background-color: #8BBB92;
+    color: #092328;
+}

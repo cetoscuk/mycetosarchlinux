@@ -1,0 +1,161 @@
+* {
+    font-family: "Monocraft", monospace;
+    font-size: 11px;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+window {
+    background-color: #092328;
+    border: 2px solid #2A835F;
+    border-radius: 6px;
+}
+
+.main-wrapper {
+    padding: 10px;
+}
+
+label {
+    color: #8BBB92;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #8BBB92;
+}
+
+/* Kapatma Butonu */
+.close-btn {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 3px;
+    color: #8BBB92;
+    padding: 2px 6px;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.close-btn:hover {
+    background-color: #2A835F;
+    color: #092328;
+}
+
+/* Şalter (Switch) - Yeşil Minecraft Paleti */
+switch {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 10px;
+}
+
+switch:checked {
+    background-color: #2A835F;
+    border-color: #8BBB92;
+}
+
+switch slider {
+    background-color: #8BBB92;
+    border-radius: 8px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+/* Ağ Listesi ve Kartlar */
+.list-box {
+    padding-right: 4px;
+}
+
+.net-card {
+    background-color: #0e353b;
+    border: 1px solid #2A835F;
+    border-radius: 4px;
+    margin: 2px 0px;
+}
+
+.net-btn {
+    background-color: #0e353b;
+    border: none;
+    color: #8BBB92;
+    padding: 8px 10px;
+}
+
+.net-btn:hover {
+    background-color: #1a5650;
+    color: #a4e5ab;
+}
+
+.net-btn.connected {
+    color: #a4e5ab;
+    font-weight: bold;
+    background-color: #124345;
+}
+
+.details-box {
+    background-color: #092328;
+    border-top: 1px solid #2A835F;
+    padding: 8px;
+}
+
+/* Genel Butonlar */
+button {
+    background-color: #12544F;
+    border: 1px solid #2A835F;
+    border-radius: 3px;
+    color: #8BBB92;
+    padding: 6px 10px;
+}
+
+button:hover {
+    background-color: #2A835F;
+    color: #092328;
+    border-color: #8BBB92;
+}
+
+.rescan-btn {
+    padding: 4px 12px;
+    font-size: 10px;
+}
+
+/* Şifre Input Kutusu */
+entry {
+    background-color: #051518;
+    border: 1px solid #2A835F;
+    border-radius: 2px;
+    color: #8BBB92;
+    padding: 6px;
+}
+
+entry:focus {
+    border-color: #8BBB92;
+}
+
+/* Checkbox */
+checkbutton {
+    color: #8BBB92;
+}
+
+checkbutton check {
+    background-color: #051518;
+    border: 1px solid #2A835F;
+    border-radius: 2px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+checkbutton check:checked {
+    background-color: #2A835F;
+}
+/* Durum İkonları */
+.status-ok {
+    color: #a4e5ab;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-err {
+    color: #e57373;
+    font-size: 13px;
+    font-weight: bold;
+}

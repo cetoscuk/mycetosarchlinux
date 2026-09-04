@@ -1,0 +1,63 @@
+configuration {
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+* {
+    font: "Monocraft 10";
+    background-color: transparent;
+    text-color: #8BBB92;
+    margin: 0px;
+    padding: 0px;
+}
+
+window {
+    width: 290px;
+    border: 2px;
+    border-color: #2A835F;
+    border-radius: 6px;
+    background-color: #092328;
+    location: west;
+    x-offset: 74px;
+    y-offset: 60px;
+    padding: 8px;
+}
+
+mainbox {
+    children: [ prompt, listview ];
+    spacing: 6px;
+}
+
+prompt {
+    text-color: #8BBB92;
+    font: "Monocraft 11";
+    padding: 2px 4px 4px 4px;
+}
+
+listview {
+    lines: 7;
+    spacing: 4px;
+    scrollbar: false;
+}
+
+element {
+    padding: 6px 8px;
+    border: 1px;
+    border-color: #2A835F;
+    border-radius: 4px;
+    background-color: #12544F;
+    text-color: #8BBB92;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: #2A835F;
+    text-color: #092328;
+    border-color: #8BBB92;
+}
+
+element-text {
+    text-color: inherit;
+    cursor: pointer;
+}

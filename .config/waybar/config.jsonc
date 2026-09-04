@@ -1,0 +1,113 @@
+{
+    "layer": "top",
+    "position": "left",
+    "width": 75,
+    "spacing": 8,
+    "margin-left": 8,
+    "margin-top": 10,
+    "margin-bottom": 10,
+
+    "modules-left": [
+	"hyprland/workspaces",
+        "custom/wifi",
+	"custom/notification"
+    ],
+    "modules-center": [], 
+    "modules-right": [
+        "memory",
+        "cpu",
+        "pulseaudio",
+        "bluetooth",
+        "battery",
+        "clock",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 4
+        }
+    },
+    "custom/notification": {
+    "format": " ",
+    "tooltip": true,
+    "tooltip-format": "Bildirim Geçmişi",
+    "on-click": "python3 /home/cetos/.config/waybar/notif-popup.py",
+    "on-click-right": "dunstctl history-clear && notify-send 'Bildirimler' 'Geçmiş temizlendi'"
+},
+    "custom/wifi": {
+        "format": " ",
+        "tooltip-format": "Wi-Fi Yoneticisi",
+        "on-click": "/home/cetos/.config/waybar/wifi-toggle.sh"
+    },
+
+    "memory": {
+        "interval": 2,
+        "format": "{used:0.1f}G",
+        "tooltip": true,
+        "tooltip-format": "Kullanılan: {used:0.2f}GiB / {total:0.2f}GiB"
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "{usage}%"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}%",
+        "format-muted": "0%",
+        "scroll-step": 5,
+        "on-click": "~/.config/waybar/audio-toggle.sh",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+    },
+
+    "bluetooth": {
+        "format": "On",
+        "format-disabled": "Off",
+        "format-connected": "{num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "~/.config/waybar/bluetooth-toggle.sh"
+    },
+
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+	"on-click": "python3 /home/cetos/.config/waybar/battery-popup.py",
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}%",
+        "tooltip-format": "{timeTo}\nSağlık: {health}%"
+    },
+
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip-format": "<span font_family='Monocraft' size='13pt' color='#8BBB92' weight='bold'>{:%A, %d %B %Y}</span>\n\n<span font_family='Monocraft' size='12pt'>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#8BBB92'><b>{}</b></span>",
+                "days": "<span color='#8BBB92'>{}</span>",
+                "weeks": "<span color='#2A835F'><b>W{}</b></span>",
+                "weekdays": "<span color='#2A835F'><b>{}</b></span>",
+                "today": "<span color='#092328' background='#8BBB92'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    "custom/power": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/power-menu.sh"
+    }
+}

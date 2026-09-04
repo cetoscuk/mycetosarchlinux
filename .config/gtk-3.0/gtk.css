@@ -1,0 +1,108 @@
+* {
+    font-family: "Monocraft";
+    font-size: 13px;
+}
+
+/* Ana Pencere Zemin Rengi */
+window {
+    background-color: #11111b;
+    color: #cdd6f4;
+}
+
+/* Üst Menü Çubuğu (File, Edit...) */
+menubar {
+    background-color: #11111b;
+    color: #cdd6f4;
+    border-bottom: 1px solid #313244;
+}
+
+menubar > menuitem:hover {
+    background-image: -gtk-gradient(linear, left top, right top, from(rgba(110, 50, 140, 0.7)), to(rgba(166, 227, 161, 0.4)));
+    color: #ffffff;
+}
+
+/* Üst Araç Çubuğu ve Butonlar */
+toolbar {
+    background-color: #181825;
+    border-bottom: 1px solid #313244;
+    padding: 4px;
+}
+
+toolbar button {
+    background-image: none;
+    background-color: transparent;
+    color: #cdd6f4;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+toolbar button:hover {
+    background-image: -gtk-gradient(linear, left top, right top, from(rgba(110, 50, 140, 0.7)), to(rgba(166, 227, 161, 0.4)));
+    color: #ffffff;
+}
+
+/* Adres Çubuğu */
+entry {
+    background-color: #11111b;
+    color: #a6e3a1;
+    border: 1px solid #313244;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+entry:focus {
+    border-color: #a6e3a1;
+}
+
+/* Sol Kenar Çubuğu (Koyu Mor/Lacivert Zemin) */
+.sidebar,
+.sidebar treeview,
+.sidebar scrolledwindow {
+    background-color: #181825;
+    color: #cdd6f4;
+    border-right: 1px solid #313244;
+}
+
+.sidebar row:hover,
+.sidebar treeview:hover {
+    background-image: -gtk-gradient(linear, left top, right top, from(rgba(110, 50, 140, 0.5)), to(rgba(166, 227, 161, 0.3)));
+    color: #ffffff;
+}
+
+.sidebar row:selected,
+.sidebar treeview:selected {
+    background-image: -gtk-gradient(linear, left top, right top, from(rgba(110, 50, 140, 0.7)), to(rgba(166, 227, 161, 0.45)));
+    border-left: 3px solid #a6e3a1;
+    color: #ffffff;
+}
+
+/* Griyi Kökten Kesen Doğru Düğümler: Kenarlardan hafif daha açık mor (#251d38) */
+window scrolledwindow viewport,
+window iconview,
+window view,
+window .view,
+iconview,
+view {
+    background-color: #251d38;
+    color: #cdd6f4;
+}
+
+/* Seçilen Klasör ve Dosyalar: Mor-Yeşil Parlayan Degrade */
+window iconview:selected,
+window view:selected,
+iconview:selected,
+view:selected {
+    background-image: -gtk-gradient(linear, left top, right top, from(rgba(140, 60, 180, 0.8)), to(rgba(166, 227, 161, 0.5)));
+    border: 1px solid #a6e3a1;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+/* Alt Durum Çubuğu */
+statusbar {
+    background-color: #181825;
+    border-top: 1px solid #313244;
+    color: #a6e3a1;
+    padding: 4px 8px;
+}
